@@ -1,0 +1,89 @@
+body {
+    background-color: #002030;
+    color: #ffffff;
+}
+
+#boxMenu {
+    margin-right: 15px;
+    width: 100vw -50;
+}
+
+#menu {
+    float: right;
+    list-style: none;
+    gap: 15px;
+    display: flex;
+}
+
+.clear{
+    clear: both;
+}
+
+li a {
+    font-size: 25px;
+}
+
+li a:hover {
+    text-decoration: underline #00ffff;
+    text-underline-offset: 5px;
+    cursor: pointer;
+}
+
+/* css da primeira section */
+
+#apresentation {
+    width: 100vw -1;
+    height: calc(100vh - 80px);
+}
+
+h1 {
+    z-index: 999;
+    color: #00ffff;
+    margin: -400px 0px 0px 850px;
+    font-size: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline #00ffff;
+    text-underline-offset: 10px;
+}
+
+h3 {
+    z-index: 999;
+    color: #ffffff;
+    margin-left: 1100px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: underline #ffffff;
+    text-underline-offset: 10px;
+}
+
+.profyle {
+    width: 550px;
+    height: 550px;
+    border-radius: 50%;
+    border: 1px solid #00ffff;
+    margin: 200px 0px 0px 250px;
+    z-index: 999;
+    position: relative;
+}
+
+.col-1 {
+    width: 550px;
+    background-color: #00ffff;
+    height: 70px;
+    border-radius: 50px;
+    margin: 250px 0px 0px 90px;
+    transform: rotateZ(-50deg);
+    position: absolute;
+    z-index: 998;
+}
+
+.col-2 {
+    width: 550px;
+    background-color: #00ffff;
+    height: 70px;
+    border-radius: 50px;
+    margin: 300px 0px 0px 0px;
+    transform: rotateZ(-50deg);
+    position: absolute;
+    z-index: 998;
+}
