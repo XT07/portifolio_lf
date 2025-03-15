@@ -1,6 +1,21 @@
 body {
     background-color: #002030;
     color: #ffffff;
+    padding: 0;
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00ffff;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #001020;
 }
 
 #boxMenu {
@@ -33,7 +48,7 @@ li a:hover {
 
 #apresentation {
     width: 100vw -1;
-    height: calc(100vh - 80px);
+    height: calc(100vh - 65px);
 }
 
 h1 {
@@ -86,4 +101,100 @@ h3 {
     transform: rotateZ(-50deg);
     position: absolute;
     z-index: 998;
+}
+
+.lineTitle1 {
+    width: 200px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    margin: -60px 0px 0px 890px;
+}
+
+.lineTitle2 {
+    width: 200px;
+    height: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    margin: -60px 0px 0px 1470px;
+}
+
+/* css do top project base */
+
+#topProject1 {
+    width: 100vw -1;
+    height: 100vh;
+    background-color: #001020;
+}
+
+#topProject2 {
+    width: 100vw -1;
+    height: 100vh;
+    background-color: #002030;
+}
+
+#topProject3 {
+    width: 100vw -1;
+    height: 100vh;
+    background-color: #001020;
+}
+
+.masc1 {
+    width: 70px;
+    height: 60px;
+    background-color: #002030;
+    position: absolute;
+    margin: 0px 0px 0px 850px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.masc2 {
+    width: 70px;
+    height: 30px;
+    background-color: #001020;
+    position: absolute;
+    margin: -30px 0px 0px 920px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.masc3 {
+    width: 70px;
+    height: 60px;
+    background-color: #002030;
+    position: absolute;
+    margin: 0px 0px 0px 990px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.masc4 {
+    width: 70px;
+    height: 60px;
+    background-color: #001020;
+    position: absolute;
+    margin: 0px 0px 0px 850px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+.masc5 {
+    width: 70px;
+    height: 30px;
+    background-color: #002030;
+    position: absolute;
+    margin: -30px 0px 0px 920px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+}
+
+.masc6 {
+    width: 70px;
+    height: 60px;
+    background-color: #001020;
+    position: absolute;
+    margin: 0px 0px 0px 990px;
+    border-bottom-right-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
