@@ -226,6 +226,31 @@ li a:hover {
     margin: 730px 0px 0px 350px;
 }
 
+.rain1 {
+    width: 100px;
+    height: 100px;
+    background-color: #001020;
+    transform: rotateZ(90deg);
+    position: absolute;
+    margin: 0px 0px 0px 600px;
+    top: 0;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.rain2 {
+    width: 400px;
+    height: 100px;
+    background-color: #00ffff;
+    transform: rotateZ(90deg);
+    position: absolute;
+    margin: 0px 0px 0px 600px;
+    top: 0;
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    z-index: 999;
+}
+
 /* css do top project base */
 
 #topProject1 {
@@ -430,3 +455,9 @@ li a:hover {
 }
 
 /* css da section dos cursos */
+
+#topCurses {
+    width: 100vw -1;
+    height: 100vh -1;
+    background-color: #002030;
+}
