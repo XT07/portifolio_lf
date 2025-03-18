@@ -8,4 +8,4 @@ app.get("/", (req, res) => {
     res.render("landPage");
 });
 
-app.listen(3030, () => {});
+app.listen(3000, () => {});
