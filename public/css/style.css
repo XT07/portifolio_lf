@@ -37,6 +37,8 @@ body {
 li a {
     font-size: 25px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline #002030;
+    transition: text-decoration 0.3s ease-in-out, 0.3s ease-in-out;
 }
 
 li a:hover {
@@ -188,6 +190,11 @@ li a:hover {
     right: 0;
     margin: 200px 600px 0px 0px;
     filter: brightness(0) invert(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.github:hover {
+    transform: scale(1.2);
 }
 
 .whatsapp {
@@ -197,6 +204,11 @@ li a:hover {
     right: 0;
     margin: 200px 530px 0px 0px;
     filter: brightness(0) invert(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp:hover {
+    transform: scale(1.2);
 }
 
 .linkedin {
@@ -206,6 +218,11 @@ li a:hover {
     right: 0;
     margin: 200px 460px 0px 0px;
     filter: brightness(0) invert(1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.linkedin:hover {
+    transform: scale(1.2);
 }
 
 .lineProfyle1 {
@@ -461,6 +478,11 @@ li a:hover {
     z-index: 999;
     right: 0;
     margin: 60px 60px 0px 0px;
+}
+
+h2 a {
+    color: #ffffff;
+    text-underline-offset: 5px;
 }
 
 /* css da section dos cursos */
