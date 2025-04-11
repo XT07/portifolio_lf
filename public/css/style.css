@@ -377,12 +377,49 @@ li a:hover {
     align-items: center;
     justify-content: center;
     display: flex;
+    border-top-left-radius: #00ffff;
 }
 
 .photoSite {
     width: 96%;
     height: 96%;
     filter: brightness(50%);
+    cursor: pointer;
+}
+
+.seeFullPhoto {
+    position: absolute;
+    width: 100vw -1;
+    height: 100vh -1;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    z-index: 200;
+}
+
+.photoSiteNoFilter {
+    width: 96%;
+    height: 96%;
+    cursor: pointer;
+}
+
+.seeFullPhotoVisible {
+    position: absolute;
+    width: 100vw -1;
+    height: 100vh -1;
+    padding: 70px 200px 20px 200px;
+    display: block;
+    z-index: 1000;
+    display: block;
+}
+
+.seeSiteText {
+    position: absolute;
+    margin: 400px 0px 0px 700px;
+    z-index: 150;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    cursor: pointer;
 }
 
 .siteName {
@@ -478,6 +515,25 @@ li a:hover {
     z-index: 999;
     right: 0;
     margin: 60px 60px 0px 0px;
+    padding: 20px;
+}
+
+.textRight p {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 10px;
+    text-align: justify;
+}
+
+.textRight p a {
+    color: #00ffff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.listTexts {
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 h2 a {

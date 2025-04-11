@@ -64,23 +64,33 @@
         </div>
         <div class="textRight">
             <p>
-                O noteTools é um site desenvolvido com o objetivo de facilitar as anotações para não ter que ficar 
+                O NoteTools é um site desenvolvido com o objetivo de facilitar as anotações para não ter que ficar 
                 criando vários blocos de notas ou utilizando cadernos para anotar tudo.<br><br>
                 O noteTools já possui ou vai possuir:<br>
-                <ul>
+                <ul class="listTexts">
                     <li>
-                        site | finalizado
+                        site | finalizado ✅
                     </li>
                     <li>
-                        contas | em desenvolvimento
+                        contas | finalizado ✅
                     </li>
                     <li>
-                        app | em desenvolvimento
+                        app | em desenvolvimento ❌
                     </li>
                 </ul>
             </p>
+            <p>
+                O site conta com o banco de dados <strong>nosql do firestore no <a target="_blank" href="https://firebase.google.com/?hl=pt-br">firebase</a></strong> 
+                de forma gratuita
+            </p>
         </div>
-        <div class="leftSide">
+        <span class="seeSiteText" id="seeSiteText"></span>
+        <div class="seeFullPhoto" id="seeFullPhoto">
+            <div id="close">
+                <img src="public/img/notetools.png" class="photoSiteNoFilter" id="photOpen">
+            </div>
+        </div>
+        <div class="leftSide" id="seeImg">
             <img src="public/img/notetools.png" class="photoSite">
         </div>
     </section>
@@ -149,4 +159,39 @@
 <footer>
 
 </footer>
+<script>
+    let seeSiteText = document.getElementById("seeSiteText");
+    let seeImg = document.getElementById("seeImg");
+    let photo = document.getElementById("photo1");
+    let seeFullPhoto = document.getElementById("seeFullPhoto");
+    let closeImg = document.getElementById("close");
+
+    seeSiteText.addEventListener("click", function () {
+        seeFullPhoto.classList.add("seeFullPhotoVisible");
+    })
+
+    closeImg.addEventListener("click", function () { 
+        seeFullPhoto.classList.remove("seeFullPhotoVisible");
+    })
+
+    seeSiteText.addEventListener("mouseenter", function () {
+        seeSiteText.innerHTML = "Ver imagem";
+    })
+
+    seeSiteText.addEventListener("mouseleave", function () {
+        seeSiteText.innerHTML = "";
+    })
+
+    seeImg.addEventListener("click", function () {
+        seeFullPhoto.classList.add("seeFullPhotoVisible");
+    })
+
+    seeImg.addEventListener("mouseenter", function () {
+        seeSiteText.innerHTML = "Ver imagem";
+    })
+
+    seeImg.addEventListener("mouseleave", function () {
+        seeSiteText.innerHTML = "";
+    })
+</script>
 </html>
