@@ -81,9 +81,18 @@
             </p>
             <p>
                 O site conta com o banco de dados <strong>nosql do firestore no <a target="_blank" href="https://firebase.google.com/?hl=pt-br">firebase</a></strong> 
-                de forma gratuita
+                de forma gratuita.
+            </p>
+            <p>
+                Foi um projeto bem legal de fazer e com ele ganhei alguns conhecimentos que eu não 
+                possuia antes.
             </p>
         </div>
+        <input type="checkbox" class="btnClose" id="btnClose">
+        <label for="btnClose" class="btnCloseBox" id="labelBtnClose">
+            <span></span>
+            <span></span>
+        </label>
         <span class="seeSiteText" id="seeSiteText"></span>
         <div class="seeFullPhoto" id="seeFullPhoto">
             <div id="close">
@@ -110,6 +119,12 @@
 
             </p>
         </div>
+        <span class="seeSiteText" id="seeSiteText"></span>
+        <div class="seeFullPhoto" id="seeFullPhoto">
+            <div id="close">
+                <img src="public/img/notetools.png" class="photoSiteNoFilter" id="photOpen">
+            </div>
+        </div>
         <div class="rightSide">
             <img src="public/img/temp.jpg" class="photoSite">
         </div>
@@ -128,6 +143,12 @@
             <p>
 
             </p>
+        </div>
+        <span class="seeSiteText" id="seeSiteText"></span>
+        <div class="seeFullPhoto" id="seeFullPhoto">
+            <div id="close">
+                <img src="public/img/notetools.png" class="photoSiteNoFilter" id="photOpen">
+            </div>
         </div>
         <div class="leftSide">
             <img src="public/img/temp.jpg" class="photoSite">
@@ -165,13 +186,22 @@
     let photo = document.getElementById("photo1");
     let seeFullPhoto = document.getElementById("seeFullPhoto");
     let closeImg = document.getElementById("close");
+    let btnClose = document.getElementById("btnClose");
+    let labelBtnClose = document.getElementById("labelBtnClose");
+
+    btnClose.addEventListener("change", function () {
+        seeFullPhoto.classList.remove("seeFullPhotoVisible");
+        labelBtnClose.classList.remove("btnCloseBoxDisplayOn");
+    })
 
     seeSiteText.addEventListener("click", function () {
         seeFullPhoto.classList.add("seeFullPhotoVisible");
+        labelBtnClose.classList.add("btnCloseBoxDisplayOn");
     })
 
     closeImg.addEventListener("click", function () { 
         seeFullPhoto.classList.remove("seeFullPhotoVisible");
+        labelBtnClose.classList.remove("btnCloseBoxDisplayOn");
     })
 
     seeSiteText.addEventListener("mouseenter", function () {
