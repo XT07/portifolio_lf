@@ -302,6 +302,10 @@ li a:hover {
 }
 
 .btnCloseBoxDisplayOn {
+    width: 30px;
+    height: 30px;
+    margin: 40px 0px 0px 1570px;
+    position: absolute;
     display: block;
 }
 
@@ -429,6 +433,10 @@ li a:hover {
     align-items: center;
     display: none;
     z-index: 200;
+}
+
+.seeFullPhoto img {
+    border: 2px solid #00ffff;
 }
 
 .photoSiteNoFilter {
