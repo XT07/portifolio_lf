@@ -310,11 +310,11 @@ li a:hover {
 }
 
 .btnCloseBox span:nth-child(1) {
-    transform: rotate(45deg) translate(1px, 1px);
+    transform: rotate(45deg);
 }
 
 .btnCloseBox span:nth-child(2) {
-    transform: rotate(-45deg) translate(1px, -1px);
+    transform: rotate(-45deg);
 }
 
 #topProject1 {
