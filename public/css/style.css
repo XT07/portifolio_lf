@@ -286,8 +286,8 @@ li a:hover {
 .btnCloseBox {
     width: 30px;
     height: 30px;
-    margin: 40px 0px 0px 1570px;
-    position: absolute;
+    margin: 10px 0px 0px 50px;
+    position: relative;
     display: none;
 }
 
@@ -304,7 +304,7 @@ li a:hover {
 .btnCloseBoxDisplayOn {
     width: 30px;
     height: 30px;
-    margin: 40px 0px 0px 1570px;
+    margin: -20px 0px 0px 75%;
     position: absolute;
     display: block;
 }
