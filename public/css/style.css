@@ -585,10 +585,26 @@ h2 a {
 
 /* css da section dos cursos */
 
+.devIconNet {
+    width: 100px;
+    height: 100px;
+}
+
+.textCurse {
+    margin: 200px 0px 50px 150px;
+    position: absolute;
+    width: 80%;
+    padding: 20px 10px 10px 20px;
+    border-radius: 15px;
+    background-color: #001020;
+}
+
 #topCurses {
     width: 100vw -1;
     height: 100vh -1;
     background-color: #002030;
+    padding: 0;
+    margin: 0;
 }
 
 #topCurses h2 {
